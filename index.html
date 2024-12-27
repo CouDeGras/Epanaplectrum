@@ -7,12 +7,13 @@
   <title>Epanaplectrum</title>
   <style>
     /* Begin CSS */
-	    @font-face {
+    @font-face {
       font-family: 'CustomFont';
       src: url('/font.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
     }
+
     :root {
       --primary-color: #e4c1f9;
       --background-color: #080808;
@@ -23,7 +24,7 @@
     }
 
     body {
-      font-family: 'CustomFont','Effra Trial', 'Open Sans', sans-serif;
+      font-family: 'CustomFont', 'Effra Trial', 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
       background-color: var(--background-color);
@@ -52,33 +53,36 @@
     .content {
       padding: 24px;
     }
+
     .content h2 {
       margin: 0px;
       font-size: 32px;
       font-weight: 2400;
-		font-family: 'Effra Trial', sans-serif;
+      font-family: 'CustomFont', 'Effra Trial', sans-serif;
     }
-.location-container {
-  border: 1px solid var(--primary-color);
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px 0;
-  background-color: var(--surface-color);
-}
 
-.location-container h3:first-child {
-  margin-top: 0;
-}
+    .location-container {
+      border: 1px solid var(--primary-color);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: var(--surface-color);
+    }
 
-.location-container p {
-  margin-bottom: 0;
-}
-	  #toggleRadioStreams {
-  background-color: var(--primary-color);
-  color: #2C2C2C;
-  margin-bottom: 15px;
-  float: center;
-		        font-family: inherit;
+    .location-container h3:first-child {
+      margin-top: 0;
+    }
+
+    .location-container p {
+      margin-bottom: 0;
+    }
+
+    #toggleRadioStreams {
+      background-color: var(--primary-color);
+      color: #2C2C2C;
+      margin-bottom: 15px;
+      float: center;
+      font-family: inherit;
       padding: 14px 20px;
       margin: 24px 0;
       border: none;
@@ -89,27 +93,34 @@
       transition: background-color 0.3s;
       font-weight: 600;
       font-family: inherit;
-}
+    }
 
-#toggleRadioStreams:hover {
-  background-color: #7C4DFF;
-}
-    h2, h3 {
+    #toggleRadioStreams:hover {
+      background-color: #7C4DFF;
+    }
+
+    h2,
+    h3 {
       color: var(--primary-color);
       margin-top: 32px;
       font-weight: 2400;
     }
-h3 {
-  margin-bottom: 2px; /* Reduce bottom margin */
-}
 
-input[type="text"] {
-  margin: 0 0 0px 0; /* Reduce top margin, keep bottom margin */
-}
+    h3 {
+      margin-bottom: 2px;
+      /* Reduce bottom margin */
+    }
 
-label {
-  margin-top: 36px; /* Increase top margin to separate sections */
-}
+    input[type="text"] {
+      margin: 0 0 0px 0;
+      /* Reduce top margin, keep bottom margin */
+    }
+
+    label {
+      margin-top: 36px;
+      /* Increase top margin to separate sections */
+    }
+
     input[type="text"] {
       width: 100%;
       padding: 12px 16px;
@@ -127,7 +138,8 @@ label {
       color: var(--secondary-text-color);
     }
 
-    input[type="submit"], .dialog-button {
+    input[type="submit"],
+    .dialog-button {
       background-color: var(--primary-color);
       color: #2C2C2C;
       padding: 14px 20px;
@@ -142,38 +154,44 @@ label {
       font-family: inherit;
     }
 
-    input[type="submit"]:hover, .dialog-button:hover {
+    input[type="submit"]:hover,
+    .dialog-button:hover {
       background-color: #7C4DFF;
-		color: white;
+      color: white;
     }
-.header-bar {
-  background-color: #1C1C1C;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  align-items: center;
-	padding: 16px;
+
+    .header-bar {
+      background-color: #1C1C1C;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      align-items: center;
+      padding: 16px;
       text-align: center;
-}
+    }
 
-.h2 {
-  color: #fff;
-  margin-bottom: 0;
-  font-weight: 300;          /* Make the font slightly bolder */
-  line-height: 1;          /* Decrease line-height for less spacing between lines */
-  letter-spacing: -1px;    /* Slightly decrease space between letters */
-}
+    .h2 {
+      color: #fff;
+      margin-bottom: 0;
+      font-weight: 300;
+      /* Make the font slightly bolder */
+      line-height: 1;
+      /* Decrease line-height for less spacing between lines */
+      letter-spacing: -1px;
+      /* Slightly decrease space between letters */
+    }
 
 
-.header-bar select {
-  background-color: #2c3e50;
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
+    .header-bar select {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
     .info-box {
       background-color: var(--surface-color);
       border-left: 4px solid var(--primary-color);
@@ -182,15 +200,20 @@ label {
       border-radius: 16px;
       text-align: left;
     }
-.info-box h3 {
-  text-align: center; /* Center the heading */
-  margin: 8px; /* Optional: Adjust margins to align well within the box */
-}
 
-.info-box p {
-  text-align: left; /* Left-align the paragraph */
-  margin: 4px; /* Optional: Reset default margins for cleaner layout */
-}
+    .info-box h3 {
+      text-align: center;
+      /* Center the heading */
+      margin: 8px;
+      /* Optional: Adjust margins to align well within the box */
+    }
+
+    .info-box p {
+      text-align: left;
+      /* Left-align the paragraph */
+      margin: 4px;
+      /* Optional: Reset default margins for cleaner layout */
+    }
 
     .warning {
       font-size: 14px;
@@ -241,6 +264,7 @@ label {
         max-width: 640px;
       }
     }
+
     input[type="range"] {
       -webkit-appearance: none;
       width: 100%;
@@ -263,7 +287,7 @@ label {
       appearance: none;
       width: 20px;
       height: 20px;
-      background: var(--primary-color, #);
+      background: var(--primary-color);
       border-radius: 50%;
       cursor: pointer;
       transition: background-color 0.3s;
@@ -276,7 +300,7 @@ label {
     input[type="range"]::-moz-range-thumb {
       width: 20px;
       height: 20px;
-      background: var(--primary-color, #);
+      background: var(--primary-color);
       border: none;
       border-radius: 50%;
       cursor: pointer;
@@ -290,7 +314,7 @@ label {
     input[type="range"]::-ms-thumb {
       width: 20px;
       height: 20px;
-      background: var(--primary-color, #);
+      background: var(--primary-color);
       border: none;
       border-radius: 50%;
       cursor: pointer;
@@ -326,434 +350,488 @@ label {
       position: relative;
       z-index: 1;
     }
-	  
-	  .row-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 20px;
-}
 
-.row-container .field {
-  flex: 1;
-}
+    .row-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
 
-.row-container .field:first-child {
-  flex-basis: var(--layout-percentage, 50%);
-}
+    .row-container .field {
+      flex: 1;
+    }
 
-.row-container .field:last-child {
-  flex-basis: calc(100% - var(--layout-percentage, 50%));
-}
+    .row-container .field:first-child {
+      flex-basis: var(--layout-percentage, 50%);
+    }
 
-.row-container input[type="text"] {
-  width: 100%;
-  box-sizing: border-box;
-}
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 20px;
-}
+    .row-container .field:last-child {
+      flex-basis: calc(100% - var(--layout-percentage, 50%));
+    }
 
-.outlined-box {
-  flex: 1 1 calc(50% - 8px); /* Two boxes side by side */
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-  padding: 16px;
-  background-color: var(--surface-color);
-  color: var(--text-color);
-}
+    .row-container input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+    }
 
-.outlined-box h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
 
-.row-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-top: 10px;
-}
+    .outlined-box {
+      flex: 1 1 calc(50% - 8px);
+      /* Two boxes side by side */
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+      padding: 16px;
+      background-color: var(--surface-color);
+      color: var(--text-color);
+    }
 
-.row-container .field {
-  flex: 1;
-}
+    .outlined-box h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
 
-.row-container input[type="text"] {
-  width: 100%;
-  padding: 8px 12px;
-  margin-top: 4px;
-  box-sizing: border-box;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 4px;
-  background-color: var(--input-background);
-  color: var(--text-color);
-}
+    .row-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 10px;
+    }
 
-.row-container input::placeholder {
-  color: var(--secondary-text-color);
-}
-.field-container {
-  display: flex;
-  flex-direction: row;
-  gap: 16px; /* Space between the two outlined boxes */
-  margin-top: 10px;
-}
+    .row-container .field {
+      flex: 1;
+    }
 
-.outlined-field {
-  flex: 1;
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-  padding: 12px;
-  background-color: var(--surface-color);
-  color: var(--text-color);
-}
+    .row-container input[type="text"] {
+      width: 100%;
+      padding: 8px 12px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      border: 1px solid var(--secondary-text-color);
+      border-radius: 4px;
+      background-color: var(--input-background);
+      color: var(--text-color);
+    }
 
-.outlined-field label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-}
+    .row-container input::placeholder {
+      color: var(--secondary-text-color);
+    }
 
-.outlined-field input[type="text"] {
-  width: 100%;
-  padding: 8px 12px;
-  box-sizing: border-box;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 4px;
-  background-color: var(--input-background);
-  color: var(--text-color);
-}
+    .field-container {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      /* Space between the two outlined boxes */
+      margin-top: 10px;
+    }
 
-.outlined-field input::placeholder {
-  color: var(--secondary-text-color);
-}
-.field-container {
-  display: flex;
-  flex-direction: row;
-  gap: 16px; /* Space between the two outlined boxes */
-  margin-top: 16px;
-}
+    .outlined-field {
+      flex: 1;
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+      padding: 12px;
+      background-color: var(--surface-color);
+      color: var(--text-color);
+    }
 
-.outlined-field {
-  flex: 1;
-  border: 1px solid var(--primary-color);
-  border-radius: 16px;
-  padding: 16px;
-  background-color: var(--surface-color);
-  color: var(--text-color);
-  margin: 0px; /* Adds a bit of space around the outline */
-}
+    .outlined-field label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 8px;
+    }
 
-.outlined-field label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 12px;
-}
+    .outlined-field input[type="text"] {
+      width: 100%;
+      padding: 8px 12px;
+      box-sizing: border-box;
+      border: 1px solid var(--secondary-text-color);
+      border-radius: 4px;
+      background-color: var(--input-background);
+      color: var(--text-color);
+    }
 
-.outlined-field input[type="text"] {
-  width: 100%;
-  padding: 8px 12px;
-  box-sizing: border-box;
-  border: 0px solid var(--secondary-text-color);
-  border-radius: 16px;
-  background-color: var(--input-background);
-  color: var(--text-color);
-}
+    .outlined-field input::placeholder {
+      color: var(--secondary-text-color);
+    }
 
-.outlined-field input::placeholder {
-  color: var(--secondary-text-color);
-}
-	  .header-bar h3{
-  margin: 0; /* Removes any margin above and below the title */
-margin-left: 0px; /* Removes any margin above and below the title */
-  padding: 0; /* Ensures no padding is added */
-}
-.outlined-field h3 {
-  margin: 0; /* Removes any margin above and below the title */
-margin-left: 4px; /* Removes any margin above and below the title */
-  padding: 0; /* Ensures no padding is added */
-}
-	  input[type="range"] {
-  -webkit-appearance: none; /* Remove default styling for WebKit browsers */
-  appearance: none; /* Remove default styling for other browsers */
-  width: 100%;
-  height: 8px; /* Adjust the height of the slider track */
-  margin: 8px 0;
-  background: #ccc; /* Gray color for the track */
-  border-radius: 16px; /* Make the track edges rounded */
-  outline: none;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-  position: relative;
-}
+    .field-container {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      /* Space between the two outlined boxes */
+      margin-top: 16px;
+    }
 
-input[type="range"]:hover {
-  opacity: 1;
-}
+    .outlined-field {
+      flex: 1;
+      border: 1px solid var(--primary-color);
+      border-radius: 16px;
+      padding: 16px;
+      background-color: var(--surface-color);
+      color: var(--text-color);
+      margin: 0px;
+      /* Adds a bit of space around the outline */
+    }
 
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  background: #2c2c2c; /* Gray color for the track */
-  border-radius: 16px;
-}
+    .outlined-field label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 12px;
+    }
 
-input[type="range"]::-moz-range-track {
-  width: 100%;
-  height: 8px;
-  background: #2c2c2c; /* Gray color for the track */
-  border-radius: 16px;
-}
+    .outlined-field input[type="text"] {
+      width: 100%;
+      padding: 8px 12px;
+      box-sizing: border-box;
+      border: 0px solid var(--secondary-text-color);
+      border-radius: 16px;
+      background-color: var(--input-background);
+      color: var(--text-color);
+    }
 
-input[type="range"]::-ms-track {
-  width: 100%;
-  height: 8px;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
+    .outlined-field input::placeholder {
+      color: var(--secondary-text-color);
+    }
 
-input[type="range"]::-ms-fill-lower {
-  background: #2c2c2c; /* Gray color for the lower part of the track */
-  border-radius: 16px;
-}
+    .header-bar h3 {
+      margin: 0;
+      /* Removes any margin above and below the title */
+      margin-left: 0px;
+      /* Removes any margin above and below the title */
+      padding: 0;
+      /* Ensures no padding is added */
+    }
 
-input[type="range"]::-ms-fill-upper {
-  background: #2c2c2c; /* Gray color for the upper part of the track */
-  border-radius: 16px;
-}
+    .outlined-field h3 {
+      margin: 0;
+      /* Removes any margin above and below the title */
+      margin-left: 4px;
+      /* Removes any margin above and below the title */
+      padding: 0;
+      /* Ensures no padding is added */
+    }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: var(--primary-color); /* Use your preferred thumb color */
-  border-radius: 50%; /* Make it circular */
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    input[type="range"] {
+      -webkit-appearance: none;
+      /* Remove default styling for WebKit browsers */
+      appearance: none;
+      /* Remove default styling for other browsers */
+      width: 100%;
+      height: 8px;
+      /* Adjust the height of the slider track */
+      margin: 8px 0;
+      background: #ccc;
+      /* Gray color for the track */
+      border-radius: 16px;
+      /* Make the track edges rounded */
+      outline: none;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      position: relative;
+    }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: #7C4DFF; /* Highlight color on hover */
-}
+    input[type="range"]:hover {
+      opacity: 1;
+    }
 
-input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: var(--primary-color); /* Use your preferred thumb color */
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      background: #2c2c2c;
+      /* Gray color for the track */
+      border-radius: 16px;
+    }
 
-input[type="range"]::-ms-thumb {
-  width: 20px;
-  height: 20px;
-  background: var(--primary-color); /* Use your preferred thumb color */
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.header-bar h3,
-.header-bar span {
-    display: inline;
-}
+    input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 8px;
+      background: #2c2c2c;
+      /* Gray color for the track */
+      border-radius: 16px;
+    }
 
-.header-bar {
-    white-space: nowrap; /* Prevents wrapping to the next line */
-}
+    input[type="range"]::-ms-track {
+      width: 100%;
+      height: 8px;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    input[type="range"]::-ms-fill-lower {
+      background: #2c2c2c;
+      /* Gray color for the lower part of the track */
+      border-radius: 16px;
+    }
+
+    input[type="range"]::-ms-fill-upper {
+      background: #2c2c2c;
+      /* Gray color for the upper part of the track */
+      border-radius: 16px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      /* Use your preferred thumb color */
+      border-radius: 50%;
+      /* Make it circular */
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      background-color: #7C4DFF;
+      /* Highlight color on hover */
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      /* Use your preferred thumb color */
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="range"]::-ms-thumb {
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      /* Use your preferred thumb color */
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .header-bar h3,
+    .header-bar span {
+      display: inline;
+    }
+
+    .header-bar {
+      white-space: nowrap;
+      /* Prevents wrapping to the next line */
+    }
 
     /* End CSS */
   </style>
 </head>
 
 <body>
-<div class="header-bar">
+  <div class="header-bar">
     <h3>::epanaplectrum::</h3> <span>&nbsp;&nbsp;&nbsp;&nbsp;corde pulsum tangite</span>
-</div>
+  </div>
 
   <div id="container">
-	  
+
     <div class="content">
-		      <div class="info-box">
-       <h3>Disclaimer for Prototype Evaluation Use</h3>
-<p>This prototype is provided for evaluation purposes only and is not intended for redistribution, sale, or commercial use. Please note the following:</p>
+      <div class="info-box">
+        <h3>Disclaimer for Prototype Evaluation Use</h3>
+        <p>This prototype is provided for evaluation purposes only and is not intended for redistribution, sale, or
+          commercial use. Please note the following:</p>
 
-<p><strong>1. Component Certification:</strong><br>
-Certain components used in this prototype are CE-certified by their respective manufacturers. However, the overall system, including wiring and programming, has been prototyped and has not undergone full certification as a final product.</p>
+        <p><strong>1. Component Certification:</strong><br>
+          Certain components used in this prototype are CE-certified by their respective manufacturers. However, the
+          overall system, including wiring and programming, has been prototyped and has not undergone full certification
+          as a final product.</p>
 
-<p><strong>2. Regulatory Compliance:</strong><br>
-This prototype has not been certified to meet UKCA, RoHS, or other regulatory standards. It is provided "as is" and may not comply with all applicable safety, environmental, or regulatory requirements.</p>
+        <p><strong>2. Regulatory Compliance:</strong><br>
+          This prototype has not been certified to meet UKCA, RoHS, or other regulatory standards. It is provided "as
+          is" and may not comply with all applicable safety, environmental, or regulatory requirements.</p>
 
-<p><strong>3. Usage Conditions:</strong><br>
-This prototype is intended for use in controlled environments by volunteers or qualified evaluators. It is not suitable for deployment in environments or applications where regulatory compliance is required.</p>
+        <p><strong>3. Usage Conditions:</strong><br>
+          This prototype is intended for use in controlled environments by volunteers or qualified evaluators. It is not
+          suitable for deployment in environments or applications where regulatory compliance is required.</p>
 
-<p><strong>4. Safety Notice:</strong><br>
-This prototype automates the pressing of buttons, and users must exercise caution when deploying it in scenarios involving potentially hazardous devices, such as heaters or other high-power equipment. Users are responsible for assessing the safety implications of the prototype’s actions in their specific use case.</p>
+        <p><strong>4. Safety Notice:</strong><br>
+          This prototype automates the pressing of buttons, and users must exercise caution when deploying it in
+          scenarios involving potentially hazardous devices, such as heaters or other high-power equipment. Users are
+          responsible for assessing the safety implications of the prototype’s actions in their specific use case.</p>
 
-<p><strong>5. Network Connectivity:</strong><br>
-This device hosts a Wi-Fi hotspot to serve a local web-based settings page. All settings are stored locally, and the device does not transmit data to external servers or networks. Users should ensure that the Wi-Fi hotspot is used in a secure environment to prevent unauthorized access.</p>
+        <p><strong>5. Network Connectivity:</strong><br>
+          This device hosts a Wi-Fi hotspot to serve a local web-based settings page. All settings are stored locally,
+          and the device does not transmit data to external servers or networks. Users should ensure that the Wi-Fi
+          hotspot is used in a secure environment to prevent unauthorized access.</p>
 
-<p><strong>6. Reliability and Performance:</strong><br>
-As a prototype, this device may experience unexpected behavior, malfunctions, or performance limitations. It is not intended for critical operations or applications where reliability and performance are essential.</p>
+        <p><strong>6. Reliability and Performance:</strong><br>
+          As a prototype, this device may experience unexpected behavior, malfunctions, or performance limitations. It
+          is not intended for critical operations or applications where reliability and performance are essential.</p>
 
-<p><strong>7. Limited Support:</strong><br>
-This prototype is provided without guarantees of technical support, maintenance, or future updates. While feedback is welcome, the manufacturer is not obligated to address issues or provide fixes for defects encountered during use.</p>
+        <p><strong>7. Limited Support:</strong><br>
+          This prototype is provided without guarantees of technical support, maintenance, or future updates. While
+          feedback is welcome, the manufacturer is not obligated to address issues or provide fixes for defects
+          encountered during use.</p>
 
-<p><strong>8. Intellectual Property:</strong><br>
-This prototype and its associated technologies are the intellectual property of the manufacturer. By using this prototype, you agree not to reverse engineer, modify, or reproduce it without prior written consent.</p>
+        <p><strong>8. Intellectual Property:</strong><br>
+          This prototype and its associated technologies are the intellectual property of the manufacturer. By using
+          this prototype, you agree not to reverse engineer, modify, or reproduce it without prior written consent.</p>
 
-<p><strong>9. Environmental Conditions:</strong><br>
-This prototype is designed for use in standard indoor environments and has not been tested for exposure to extreme temperatures, humidity, or other harsh conditions. Use outside these parameters may result in damage or malfunction.</p>
+        <p><strong>9. Environmental Conditions:</strong><br>
+          This prototype is designed for use in standard indoor environments and has not been tested for exposure to
+          extreme temperatures, humidity, or other harsh conditions. Use outside these parameters may result in damage
+          or malfunction.</p>
 
-<p><strong>10. Feedback Collection:</strong><br>
-As part of the evaluation process, users may be asked to provide feedback on the prototype's functionality. By using this device, you agree that any feedback or suggestions you provide may be used to improve the product without compensation.</p>
+        <p><strong>10. Feedback Collection:</strong><br>
+          As part of the evaluation process, users may be asked to provide feedback on the prototype's functionality. By
+          using this device, you agree that any feedback or suggestions you provide may be used to improve the product
+          without compensation.</p>
 
-<p><strong>11. Warranty Disclaimer:</strong><br>
-This prototype is provided "as is," with no express or implied warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p><strong>11. Warranty Disclaimer:</strong><br>
+          This prototype is provided "as is," with no express or implied warranties, including but not limited to
+          implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
 
 
       </div>
       <form id="settingsForm" method='get' action='setting'>
         <h2>Servo Configuration</h2>
-  <div class="field-container">
-    <!-- First Outlined Box -->
-    <div class="outlined-field">
-      <h3>Actuation Interval</h3>
-      <input id="servo_actuation_interval" name="servo_actuation_interval" type="text" maxlength="10" placeholder="Enter Integer in Seconds">
-    </div>
-    <!-- Second Outlined Box -->
-    <div class="outlined-field">
-      <h3>Repetition</h3>
-      <input id="servo_actuation_repetition" name="servo_actuation_repetition" type="text" maxlength="10" placeholder="Enter Integer">
-    </div>
-  </div>
         <div class="field-container">
-			<div class="outlined-field">
-          <h3>Release Angle</h3>
-			<br>
-          <div class="range-wrapper">
-            <input id="servo_release_angle" name="servo_release_angle" type="range" min="0" max="180" value="90">
-            <div class="range-value" id="release_angle_value">90</div>
+          <!-- First Outlined Box -->
+          <div class="outlined-field">
+            <h3>Actuation Interval</h3>
+            <input id="servo_actuation_interval" name="servo_actuation_interval" type="text" maxlength="10"
+              placeholder="Enter Integer in Seconds">
+          </div>
+          <!-- Second Outlined Box -->
+          <div class="outlined-field">
+            <h3>Repetition</h3>
+            <input id="servo_actuation_repetition" name="servo_actuation_repetition" type="text" maxlength="10"
+              placeholder="Enter Integer">
           </div>
         </div>
-        <div class="outlined-field">
-          <h3>Actuate Angle</h3>
-			<br>
-          <div class="range-wrapper">
-            <input id="servo_actuate_angle" name="servo_actuate_angle" type="range" min="0" max="180" value="90">
-            <div class="range-value" id="actuate_angle_value">90</div>
+        <div class="field-container">
+          <div class="outlined-field">
+            <h3>Release Angle</h3>
+            <br>
+            <div class="range-wrapper">
+              <input id="servo_release_angle" name="servo_release_angle" type="range" min="0" max="180" value="90">
+              <div class="range-value" id="release_angle_value">90</div>
+            </div>
           </div>
-        </div></div><br>
+          <div class="outlined-field">
+            <h3>Actuate Angle</h3>
+            <br>
+            <div class="range-wrapper">
+              <input id="servo_actuate_angle" name="servo_actuate_angle" type="range" min="0" max="180" value="90">
+              <div class="range-value" id="actuate_angle_value">90</div>
+            </div>
+          </div>
+        </div><br>
         <h2>Conditional Override</h2>
         <div class="location-container">
           <h3>Temperature Threshold</h3>
           <input id="thres" name='thres' type="text" maxlength="64" placeholder="Enter Integer in Centigrade">
-			<p class="warning">Servo will not actuate when ambient temperature exceeds threshold.</p></div>
-		   <h2>Actions</h2>
-		    <div class="field-container">
-    <!-- First Outlined Box -->
-    <div class="outlined-field">
-          <h3>Save and Reboot Device</h3>
-          <input type="submit" value="Save Parameters">
-		</div>
-		</form>
-		      <div class="outlined-field">
-		  <form action="/assay" method="get">
-			  <h3>Test Actuation Parameters</h3>
+          <p class="warning">Servo will not actuate when ambient temperature exceeds threshold.</p>
+        </div>
+        <h2>Actions</h2>
+        <div class="field-container">
+          <!-- First Outlined Box -->
+          <div class="outlined-field">
+            <h3>Save and Reboot Device</h3>
+            <input type="submit" value="Save Parameters">
+          </div>
+      </form>
+
+      <form action="/assay" method="get">
+        <div class="outlined-field">
+          <h3>Test Actuation Parameters</h3>
           <input type="submit" value="Assay Actuation">
-        </form>
-		  </div></div>
-		  <p class="warning"> Github.com/CouDeGras/Epanaplectrum<br>© Yisu Fang<br>Epanaplectrum Development Project<br>School of Engineering, University of Birmingham<br>Designed in the United Kingdom<br>On the Year of Our Lord 2025</p>
-		          </div>
+        </div>
       </form>
     </div>
+    <p class="warning"> Github.com/CouDeGras/Epanaplectrum<br>© Yisu Fang<br>Epanaplectrum Development Project<br>School
+      of Engineering, University of Birmingham<br>Designed in the United Kingdom<br>On the Year of Our Lord 2025</p>
   </div>
 
   <script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Slider Initialization
-  const sliders = [
-    { slider: 'servo_release_angle', display: 'release_angle_value' },
-    { slider: 'servo_actuate_angle', display: 'actuate_angle_value' },
-  ];
+    document.addEventListener('DOMContentLoaded', function () {
+      // Slider Initialization
+      const sliders = [
+        { slider: 'servo_release_angle', display: 'release_angle_value' },
+        { slider: 'servo_actuate_angle', display: 'actuate_angle_value' },
+      ];
 
-  sliders.forEach(({ slider, display }) => {
-    const sliderElement = document.getElementById(slider);
-    const displayElement = document.getElementById(display);
+      sliders.forEach(({ slider, display }) => {
+        const sliderElement = document.getElementById(slider);
+        const displayElement = document.getElementById(display);
 
-    function updateSliderValue() {
-      const value = sliderElement.value;
-      displayElement.textContent = value;
+        function updateSliderValue() {
+          const value = sliderElement.value;
+          displayElement.textContent = value;
 
-      const percentage = ((value - sliderElement.min) / (sliderElement.max - sliderElement.min)) * 100;
-      const thumbWidth = 20; // Adjust if the thumb size changes
-      const offset = (thumbWidth / 2) - (thumbWidth * (percentage / 100));
-      displayElement.style.left = `calc(${percentage}% + ${offset}px)`;
-    }
-
-    sliderElement.addEventListener('input', updateSliderValue);
-    updateSliderValue();
-  });
-
-  // Form Submission with Device Time
-  document.getElementById('settingsForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var formData = {};
-    new FormData(this).forEach((value, key) => {
-      formData[key] = value;
-    });
-
-    // Add device time in Linux epoch format (milliseconds)
-    formData['device_time'] = Date.now();
-
-    fetch('/setting', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          alert('Settings saved successfully: ' + JSON.stringify(data.config));
-        } else {
-          alert('Error: ' + data.message);
+          const percentage = ((value - sliderElement.min) / (sliderElement.max - sliderElement.min)) * 100;
+          const thumbWidth = 20; // Adjust if the thumb size changes
+          const offset = (thumbWidth / 2) - (thumbWidth * (percentage / 100));
+          displayElement.style.left = `calc(${percentage}% + ${offset}px)`;
         }
-      })
-      .catch((error) => {
-        alert('Error: ' + error.message);
+
+        sliderElement.addEventListener('input', updateSliderValue);
+        updateSliderValue();
       });
-  });
 
-  // Toggle Visibility of Radio Streams Content
-  const toggleButton = document.getElementById('toggleRadioStreams');
-  const content = document.getElementById('radioStreamsContent');
+      // Form Submission with Device Time
+      document.getElementById('settingsForm').addEventListener('submit', function (e) {
+        e.preventDefault();
 
-  if (toggleButton && content) {
-    toggleButton.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent form submission
-      if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggleButton.textContent = 'Collapse Content';
-      } else {
-        content.style.display = 'none';
-        toggleButton.textContent = 'Expand Content';
+        var formData = {};
+        new FormData(this).forEach((value, key) => {
+          formData[key] = value;
+        });
+
+        // Add device time in Linux epoch format (milliseconds)
+        formData['device_time'] = Date.now();
+
+        fetch('/setting', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.success) {
+              alert('Settings saved successfully: ' + JSON.stringify(data.config));
+            } else {
+              alert('Error: ' + data.message);
+            }
+          })
+          .catch((error) => {
+            alert('Error: ' + error.message);
+          });
+      });
+
+      // Toggle Visibility of Radio Streams Content
+      const toggleButton = document.getElementById('toggleRadioStreams');
+      const content = document.getElementById('radioStreamsContent');
+
+      if (toggleButton && content) {
+        toggleButton.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent form submission
+          if (content.style.display === 'none') {
+            content.style.display = 'block';
+            toggleButton.textContent = 'Collapse Content';
+          } else {
+            content.style.display = 'none';
+            toggleButton.textContent = 'Expand Content';
+          }
+        });
       }
     });
-  }
-});
 
   </script>
 </body>
