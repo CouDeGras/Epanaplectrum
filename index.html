@@ -665,6 +665,29 @@
   font-weight: bold;
   color: var(--primary-color); /* Text color */
 }
+.field-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap if they exceed the container width */
+  gap: 16px; /* Controls space between items */
+}
+
+.outlined-field {
+  flex: 1 1 calc(50% - 16px); /* Two fields per row */
+  max-width: calc(50% - 16px); /* Ensures fields stay within bounds */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+.outlined-field {
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+form {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
     /* End CSS */
   </style>
@@ -712,12 +735,6 @@
       </div>
     </div>
   </div><br>
-  <h2>Substitution Conditional</h2>
-<div class="unavailable-box">
-  <div class="diagonal-line"></div>
-  <p>Indisponible</p>
-</div>
-<br>
 
   <h2>Actiones</h2>
   <div class="field-container">
