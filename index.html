@@ -38,9 +38,21 @@
     }
 
     #container {
-      max-width: 100%;
+      max-width: 120%;
       margin: 0 auto;
     }
+/* Apply min-width to the body to avoid deforming elements */
+body {
+  min-width: 550px; /* Adjust based on your design */
+}
+
+/* Ensure the container doesn't shrink beyond its minimum content width */
+#container {
+  min-width: 550px; /* Matches your media query for larger screens */
+}
+
+/* Prevent outlined fields from shrinking too much */
+
 
     .top-bar {
       background-color: var(--surface-color);
