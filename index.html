@@ -38,17 +38,17 @@
     }
 
     #container {
-      max-width: 120%;
+      max-width: 60%;
       margin: 0 auto;
     }
 /* Apply min-width to the body to avoid deforming elements */
 body {
-  min-width: 550px; /* Adjust based on your design */
+  min-width: 480px; /* Adjust based on your design */
 }
 
 /* Ensure the container doesn't shrink beyond its minimum content width */
 #container {
-  min-width: 550px; /* Matches your media query for larger screens */
+  min-width: 480px; /* Matches your media query for larger screens */
 }
 
 /* Prevent outlined fields from shrinking too much */
@@ -63,7 +63,7 @@ body {
 
     .top-bar h1 {
       margin: 0px;
-      font-size: 32px;
+      font-size: 14px;
       font-weight: 2400;
     }
 
@@ -73,7 +73,7 @@ body {
 
     .content h2 {
       margin: 0px;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 2400;
     }
 
@@ -104,7 +104,7 @@ body {
       border: none;
       border-radius: 16px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 12px;
       width: 100%;
       transition: background-color 0.3s;
       font-weight: 600;
@@ -146,7 +146,7 @@ body {
       border-radius: 16px;
       background-color: var(--input-background);
       color: var(--text-color);
-      font-size: 16px;
+      font-size: 12px;
       font-family: inherit;
     }
 
@@ -158,12 +158,12 @@ body {
     .dialog-button {
       background-color: var(--primary-color);
       color: #2C2C2C;
-      padding: 14px 20px;
-      margin: 24px 0;
+      padding: 8px 8px;
+      margin: 8px 0;
       border: none;
       border-radius: 16px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 12px;
       width: 100%;
       transition: background-color 0.3s;
       font-weight: 600;
@@ -204,7 +204,7 @@ body {
       color: #fff;
       border: none;
       padding: 0.5rem;
-      font-size: 1rem;
+      font-size: 0.5rem;
       cursor: pointer;
     }
 
@@ -232,10 +232,12 @@ body {
     }
 
     .warning {
-      font-size: 14px;
+      font-size: 10px;
       color: var(--secondary-text-color);
     }
-
+	  .outlined-field h3 {
+		  font-size: 14px;
+	  }
     .currency-inputs {
       display: flex;
       justify-content: space-between;
@@ -354,7 +356,7 @@ body {
       transform: translateX(-50%);
       background-color: #e4c1f9;
       color: #2C2C2C;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: bold;
       padding: 2px 6px;
       border-radius: 5px;
@@ -404,14 +406,14 @@ body {
       /* Two boxes side by side */
       border: 1px solid var(--primary-color);
       border-radius: 8px;
-      padding: 16px;
+      padding: 8px;
       background-color: var(--surface-color);
       color: var(--text-color);
     }
 
     .outlined-box h3 {
       margin-top: 0;
-      font-size: 18px;
+      font-size: 12px;
     }
 
     .row-container {
@@ -453,7 +455,7 @@ body {
       flex: 1;
       border: 1px solid var(--primary-color);
       border-radius: 8px;
-      padding: 12px;
+      padding: 8px;
       background-color: var(--surface-color);
       color: var(--text-color);
     }
@@ -490,7 +492,7 @@ body {
       flex: 1;
       border: 1px solid var(--primary-color);
       border-radius: 16px;
-      padding: 16px;
+      padding: 2px;
       background-color: var(--surface-color);
       color: var(--text-color);
       margin: 0px;
@@ -500,12 +502,12 @@ body {
     .outlined-field label {
       font-weight: 600;
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
 
     .outlined-field input[type="text"] {
       width: 100%;
-      padding: 8px 12px;
+      padding: 8px 8px;
       box-sizing: border-box;
       border: 0px solid var(--secondary-text-color);
       border-radius: 16px;
@@ -518,7 +520,7 @@ body {
     }
 
     .header-bar h3 {
-      margin: 0;
+      margin: 8px;
       /* Removes any margin above and below the title */
       margin-left: 0px;
       /* Removes any margin above and below the title */
@@ -527,7 +529,7 @@ body {
     }
 
     .outlined-field h3 {
-      margin: 0;
+      margin: 2px;
       /* Removes any margin above and below the title */
       margin-left: 4px;
       /* Removes any margin above and below the title */
@@ -673,7 +675,7 @@ body {
   position: relative;
   z-index: 1; /* Ensures the text appears above the line */
   margin: 0;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   color: var(--primary-color); /* Text color */
 }
@@ -690,7 +692,7 @@ body {
 }
 .outlined-field {
   margin: 0;
-  padding: 16px;
+  padding: 12px;
   box-sizing: border-box;
 }
 form {
