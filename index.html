@@ -56,12 +56,12 @@
     }
 
     .content {
-      padding: 24px;
+      padding: 36px;
     }
 
     .content h2 {
       margin: 0px;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 2400;
     }
 
@@ -631,6 +631,40 @@
       white-space: nowrap;
       /* Prevents wrapping to the next line */
     }
+.unavailable-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width of the parent container */
+  height: 150px; /* Example height */
+  border: 1px solid var(--primary-color); /* Outline with primary color */
+  border-radius: 16px; /* Rounded corners */
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font-family: inherit;
+  text-align: center;
+  overflow: hidden;
+}
+
+.unavailable-box .diagonal-line {
+  position: absolute;
+  width: calc(100% + 4px); /* Extends slightly beyond the container width */
+  height: 1px; /* Matches the border thickness */
+  background-color: #303030; /* Grey color for the diagonal line */
+  top: 50%; /* Position the line in the middle */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%) rotate(45deg); /* Rotate to form the diagonal */
+}
+
+.unavailable-box p {
+  position: relative;
+  z-index: 1; /* Ensures the text appears above the line */
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color); /* Text color */
+}
 
     /* End CSS */
   </style>
@@ -679,11 +713,12 @@
     </div>
   </div><br>
   <h2>Substitution Conditional</h2>
-  <div class="location-container">
-    <h3>Limite de Temperatura</h3>
-    <input id="thres" name='thres' type="text" maxlength="64" placeholder="Entra un Integro in Centigrades">
-    <p class="warning">Le servo non actuara quando le temperatura ambiental excede le limite.</p>
-  </div>
+<div class="unavailable-box">
+  <div class="diagonal-line"></div>
+  <p>Indisponible</p>
+</div>
+<br>
+
   <h2>Actiones</h2>
   <div class="field-container">
     <!-- Prime Cassa Delimitate -->
@@ -705,7 +740,7 @@
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#A0A0A0" d="M7.138 11.001H3.852C1.728 11.001 0 9.296 0 7.201V.011h2.498v7.155c0 .737.622 1.336 1.388 1.336h3.218c.766 0 1.388-.599 1.388-1.336V.011h2.498v7.19c0 2.095-1.728 3.8-3.852 3.8M24 .011h-3.23l-5.285 4.16V.011h-2.498V11h2.498V6.814l5.284 4.187h3.217l-6.952-5.508ZM10.99 23.99H3.8c-2.095 0-3.8-1.761-3.8-3.885v-3.22C0 14.762 1.705 13 3.8 13h7.19v2.498H3.834c-.737 0-1.336.622-1.336 1.388v3.219c0 .765.6 1.387 1.336 1.387h7.156zm4.495-4.995v-2.16c0-.738.622-1.337 1.387-1.337h3.22c.765 0 1.387.6 1.387 1.336v2.16zM20.125 13H16.84c-2.124 0-3.852 1.705-3.852 3.8v7.19h2.498v-2.498h5.994v2.497h2.498V16.8c0-2.094-1.728-3.799-3.852-3.799"/></svg>
 		</div>
 <p class="warning"> Github.com/CouDeGras/Epanaplectrum<br>© Yisu Fang<br>Projecto de Developmento Epanaplectrum<br>Schola
-  de Ingenieria, Universitate de Birmingham<br>Designate in le Regno Unite<br>In Anno Domini 2025</p>
+  de Ingenieria, Universitas Birminghamiensis<br>Designate in le Regno Unite<br>In Anno Domini 2025</p>
 </div>
 
   <script>
