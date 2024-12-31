@@ -13,7 +13,12 @@
       font-weight: normal;
       font-style: normal;
     }
-
+@font-face {
+      font-family: 'CustomFont2';
+      src: url('font.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
     :root {
       --primary-color: #e4c1f9;
       --background-color: #080808;
@@ -24,7 +29,7 @@
     }
 
     body {
-      font-family: 'CustomFont', 'Effra Trial', 'Open Sans', sans-serif;
+      font-family: 'CustomFont', 'CustomFont2', 'Effra Trial', 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
       background-color: var(--background-color);
@@ -640,122 +645,69 @@
   <div id="container">
 
     <div class="content">
-      <div class="info-box">
-        <h3>Disclaimer for Prototype Evaluation Use</h3>
-        <p>This prototype is provided for evaluation purposes only and is not intended for redistribution, sale, or
-          commercial use. Please note the following:</p>
-
-        <p><strong>1. Component Certification:</strong><br>
-          Certain components used in this prototype are CE-certified by their respective manufacturers. However, the
-          overall system, including wiring and programming, has been prototyped and has not undergone full certification
-          as a final product.</p>
-
-        <p><strong>2. Regulatory Compliance:</strong><br>
-          This prototype has not been certified to meet UKCA, RoHS, or other regulatory standards. It is provided "as
-          is" and may not comply with all applicable safety, environmental, or regulatory requirements.</p>
-
-        <p><strong>3. Usage Conditions:</strong><br>
-          This prototype is intended for use in controlled environments by volunteers or qualified evaluators. It is not
-          suitable for deployment in environments or applications where regulatory compliance is required.</p>
-
-        <p><strong>4. Safety Notice:</strong><br>
-          This prototype automates the pressing of buttons, and users must exercise caution when deploying it in
-          scenarios involving potentially hazardous devices, such as heaters or other high-power equipment. Users are
-          responsible for assessing the safety implications of the prototype’s actions in their specific use case.</p>
-
-        <p><strong>5. Network Connectivity:</strong><br>
-          This device hosts a Wi-Fi hotspot to serve a local web-based settings page. All settings are stored locally,
-          and the device does not transmit data to external servers or networks. Users should ensure that the Wi-Fi
-          hotspot is used in a secure environment to prevent unauthorized access.</p>
-
-        <p><strong>6. Reliability and Performance:</strong><br>
-          As a prototype, this device may experience unexpected behavior, malfunctions, or performance limitations. It
-          is not intended for critical operations or applications where reliability and performance are essential.</p>
-
-        <p><strong>7. Limited Support:</strong><br>
-          This prototype is provided without guarantees of technical support, maintenance, or future updates. While
-          feedback is welcome, the manufacturer is not obligated to address issues or provide fixes for defects
-          encountered during use.</p>
-
-        <p><strong>8. Intellectual Property:</strong><br>
-          This prototype and its associated technologies are the intellectual property of the manufacturer. By using
-          this prototype, you agree not to reverse engineer, modify, or reproduce it without prior written consent.</p>
-
-        <p><strong>9. Environmental Conditions:</strong><br>
-          This prototype is designed for use in standard indoor environments and has not been tested for exposure to
-          extreme temperatures, humidity, or other harsh conditions. Use outside these parameters may result in damage
-          or malfunction.</p>
-
-        <p><strong>10. Feedback Collection:</strong><br>
-          As part of the evaluation process, users may be asked to provide feedback on the prototype's functionality. By
-          using this device, you agree that any feedback or suggestions you provide may be used to improve the product
-          without compensation.</p>
-
-        <p><strong>11. Warranty Disclaimer:</strong><br>
-          This prototype is provided "as is," with no express or implied warranties, including but not limited to
-          implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
-
-
-      </div>
-      <form id="settingsForm" method='get' action='setting'>
-        <h2>Servo Configuration</h2>
-        <div class="field-container">
-          <!-- First Outlined Box -->
-          <div class="outlined-field">
-            <h3>Actuation Interval</h3>
-            <input id="servo_actuation_interval" name="servo_actuation_interval" type="text" maxlength="10"
-              placeholder="Enter Integer in Seconds">
-          </div>
-          <!-- Second Outlined Box -->
-          <div class="outlined-field">
-            <h3>Repetition</h3>
-            <input id="servo_actuation_repetition" name="servo_actuation_repetition" type="text" maxlength="10"
-              placeholder="Enter Integer">
-          </div>
-        </div>
-        <div class="field-container">
-          <div class="outlined-field">
-            <h3>Release Angle</h3>
-            <br>
-            <div class="range-wrapper">
-              <input id="servo_release_angle" name="servo_release_angle" type="range" min="0" max="180" value="90">
-              <div class="range-value" id="release_angle_value">90</div>
-            </div>
-          </div>
-          <div class="outlined-field">
-            <h3>Actuate Angle</h3>
-            <br>
-            <div class="range-wrapper">
-              <input id="servo_actuate_angle" name="servo_actuate_angle" type="range" min="0" max="180" value="90">
-              <div class="range-value" id="actuate_angle_value">90</div>
-            </div>
-          </div>
-        </div><br>
-        <h2>Conditional Override</h2>
-        <div class="location-container">
-          <h3>Temperature Threshold</h3>
-          <input id="thres" name='thres' type="text" maxlength="64" placeholder="Enter Integer in Centigrade">
-          <p class="warning">Servo will not actuate when ambient temperature exceeds threshold.</p>
-        </div>
-        <h2>Actions</h2>
-        <div class="field-container">
-          <!-- First Outlined Box -->
-          <div class="outlined-field">
-            <h3>Save and Reboot Device</h3>
-            <input type="submit" value="Save Parameters">
-          </div>
-      </form>
-
-      <form action="/assay" method="get">
-        <div class="outlined-field">
-          <h3>Test Actuation Parameters</h3>
-          <input type="submit" value="Assay Actuation">
-        </div>
-      </form>
+  <form id="settingsForm" method='get' action='setting'>
+  <h2>Configuration de Servo</h2>
+  <div class="field-container">
+    <!-- Prime Cassa Delimitate -->
+    <div class="outlined-field">
+      <h3>Intervallo de Actuation</h3>
+      <input id="servo_actuation_interval" name="servo_actuation_interval" type="text" maxlength="10"
+        placeholder="Entra un Integro in Secondes">
     </div>
-    <p class="warning"> Github.com/CouDeGras/Epanaplectrum<br>© Yisu Fang<br>Epanaplectrum Development Project<br>School
-      of Engineering, University of Birmingham<br>Designed in the United Kingdom<br>On the Year of Our Lord 2025</p>
+    <!-- Secunde Cassa Delimitate -->
+    <div class="outlined-field">
+      <h3>Repetition</h3>
+      <input id="servo_actuation_repetition" name="servo_actuation_repetition" type="text" maxlength="10"
+        placeholder="Entra un Integro">
+    </div>
   </div>
+  <div class="field-container">
+    <div class="outlined-field">
+      <h3>Angulo de Liberation</h3>
+      <br>
+      <div class="range-wrapper">
+        <input id="servo_release_angle" name="servo_release_angle" type="range" min="0" max="180" value="90">
+        <div class="range-value" id="release_angle_value">90</div>
+      </div>
+    </div>
+    <div class="outlined-field">
+      <h3>Angulo de Actuation</h3>
+      <br>
+      <div class="range-wrapper">
+        <input id="servo_actuate_angle" name="servo_actuate_angle" type="range" min="0" max="180" value="90">
+        <div class="range-value" id="actuate_angle_value">90</div>
+      </div>
+    </div>
+  </div><br>
+  <h2>Substitution Conditional</h2>
+  <div class="location-container">
+    <h3>Limite de Temperatura</h3>
+    <input id="thres" name='thres' type="text" maxlength="64" placeholder="Entra un Integro in Centigrades">
+    <p class="warning">Le servo non actuara quando le temperatura ambiental excede le limite.</p>
+  </div>
+  <h2>Actiones</h2>
+  <div class="field-container">
+    <!-- Prime Cassa Delimitate -->
+    <div class="outlined-field">
+      <h3>Salva e Reiniar Dispositivo</h3>
+      <input type="submit" value="Salva Parametros">
+    </div>
+</form>
+
+  <div class="outlined-field">   
+    <form action="/assay" method="get">
+      <h3>Actuation</h3>
+      <input type="submit" value="Testa Actuation">
+    </form>
+  </div>
+
+</div>
+		<div><br>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#A0A0A0" d="M7.138 11.001H3.852C1.728 11.001 0 9.296 0 7.201V.011h2.498v7.155c0 .737.622 1.336 1.388 1.336h3.218c.766 0 1.388-.599 1.388-1.336V.011h2.498v7.19c0 2.095-1.728 3.8-3.852 3.8M24 .011h-3.23l-5.285 4.16V.011h-2.498V11h2.498V6.814l5.284 4.187h3.217l-6.952-5.508ZM10.99 23.99H3.8c-2.095 0-3.8-1.761-3.8-3.885v-3.22C0 14.762 1.705 13 3.8 13h7.19v2.498H3.834c-.737 0-1.336.622-1.336 1.388v3.219c0 .765.6 1.387 1.336 1.387h7.156zm4.495-4.995v-2.16c0-.738.622-1.337 1.387-1.337h3.22c.765 0 1.387.6 1.387 1.336v2.16zM20.125 13H16.84c-2.124 0-3.852 1.705-3.852 3.8v7.19h2.498v-2.498h5.994v2.497h2.498V16.8c0-2.094-1.728-3.799-3.852-3.799"/></svg>
+		</div>
+<p class="warning"> Github.com/CouDeGras/Epanaplectrum<br>© Yisu Fang<br>Projecto de Developmento Epanaplectrum<br>Schola
+  de Ingenieria, Universitate de Birmingham<br>Designate in le Regno Unite<br>In Anno Domini 2025</p>
+</div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
